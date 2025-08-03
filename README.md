@@ -1,214 +1,184 @@
-# AI Study Hub 🤖
+# 🤖 AI Study Hub - AI 학습 & SuperClaude 마스터하기
 
-AI와 머신러닝을 체계적으로 학습하기 위한 종합 가이드 레포지토리입니다.
+AI와 머신러닝을 체계적으로 학습하고, SuperClaude를 활용한 개발 능력을 극대화하는 종합 가이드입니다.
 
-## 📚 목차
+## 🎯 Quick Start - 5분 안에 시작하기
 
-1. [시작하기](#시작하기)
-2. [학습 로드맵](#학습-로드맵)
-3. [프로젝트 구조](#프로젝트-구조)
-4. [주요 도구](#주요-도구)
-5. [실습 프로젝트](#실습-프로젝트)
-6. [리소스](#리소스)
+### SuperClaude 빠른 설치
+```bash
+# 1. Claude Code 실행
+claude
+
+# 2. Plan Mode 활성화 후 다음 입력:
+"SuperClaude를 설치해주세요"
+
+# 3. 5분 후 재시작하면 완료!
+```
+
+### MCP 자동 설치
+```bash
+# CLAUDE.md에 자동 설치 지침 추가 후:
+"Context7 MCP를 설치해주세요"
+"Sequential MCP도 설치해주세요"
+# 각 5분이면 완료!
+```
 
 ---
 
-## 🚀 시작하기
+## 📚 목차
 
-### 환경 설정
+### 🚀 SuperClaude 마스터 가이드
+1. [SuperClaude 완벽 가이드](./superclaude/00_SUPERCLAUDE_COMPLETE_GUIDE.md) - 16개 명령어로 상급 개발자 되기
+2. [SuperClaude 설치 가이드 (한국어)](./superclaude/INSTALLATION_GUIDE_KO.md)
+3. [SuperClaude 명령어 예제](./superclaude/examples/01_basic_commands.md)
 
-```bash
-# Python 가상환경 생성
-python -m venv venv
+### 🔧 MCP (Model Context Protocol)
+1. [MCP 5분 자동 설치법](./MCP/01_MCP_AUTO_INSTALL_STEP_BY_STEP.md) - "설치해줘"만 하면 끝!
+2. [MCP 자동 설치 가이드](./superclaude/MCP_AUTO_INSTALL_GUIDE.md)
 
-# 가상환경 활성화 (Windows)
-venv\Scripts\activate
+### 🎨 GUI 도구
+1. [Claudia GUI 완벽 가이드](./GUI/02_CLAUDIA_GUI_STEP_BY_STEP.md) - 터미널 없이 마우스로!
+2. [Claudia 설치 및 사용법](./superclaude/CLAUDIA_GUI_GUIDE.md)
 
-# 가상환경 활성화 (Mac/Linux)
-source venv/bin/activate
-
-# 기본 패키지 설치
-pip install -r requirements.txt
-```
-
-### 필수 도구 설치
-
-1. **Python 3.8+**: [다운로드](https://www.python.org/downloads/)
-2. **Git**: [다운로드](https://git-scm.com/)
-3. **VSCode**: [다운로드](https://code.visualstudio.com/)
-4. **Jupyter Notebook**: `pip install jupyter`
+### 🧠 AI 학습 자료
+1. [Python for AI 기초](./fundamentals/python-basics/01_python_for_ai.md)
+2. [LangChain 기초](./tools/langchain/01_langchain_basics.md)
+3. [고급 프롬프트 템플릿](./prompt-engineering/01_advanced_prompt_templates.md)
 
 ---
 
 ## 🗺️ 학습 로드맵
 
-### 1단계: AI 기초 (2-4주)
-- [ ] Python 기초 문법
-- [ ] NumPy, Pandas 기초
-- [ ] 데이터 시각화 (Matplotlib, Seaborn)
-- [ ] 통계학 기초
+### 1단계: SuperClaude 설치 (30분)
+- [ ] SuperClaude 설치
+- [ ] 4개 필수 MCP 설치
+- [ ] Claudia GUI 설치 (선택)
 
-### 2단계: 머신러닝 기초 (4-6주)
-- [ ] Scikit-learn 입문
-- [ ] 지도학습 (분류, 회귀)
-- [ ] 비지도학습 (클러스터링, 차원축소)
-- [ ] 모델 평가 및 개선
+### 2단계: 기본 사용법 익히기 (1주)
+- [ ] 16개 슬래시 커맨드 연습
+- [ ] 체크포인트/롤백 활용
+- [ ] Hook 시스템 설정
 
-### 3단계: 딥러닝 기초 (4-6주)
-- [ ] 신경망 이론
-- [ ] TensorFlow/PyTorch 기초
-- [ ] CNN (컴퓨터 비전)
-- [ ] RNN/LSTM (시계열 데이터)
+### 3단계: 실전 프로젝트 (2주)
+- [ ] 이미지 편집기 만들기
+- [ ] 웹 크롤러 개발
+- [ ] API 서버 구축
 
-### 4단계: 고급 주제 (6-8주)
-- [ ] Transformers & NLP
-- [ ] LangChain & RAG
-- [ ] MLOps 기초
-- [ ] 프로덕션 배포
-
-### 5단계: 프로젝트 & 포트폴리오 (지속적)
-- [ ] 개인 프로젝트 3개 이상
-- [ ] 오픈소스 기여
-- [ ] 블로그 작성
+### 4단계: AI 기초 학습 (4주)
+- [ ] Python 기초
+- [ ] LangChain 입문
+- [ ] 프롬프트 엔지니어링
 
 ---
 
-## 📁 프로젝트 구조
+## 💡 핵심 명령어 치트시트
 
+### SuperClaude 명령어
+```bash
+/sc design      # 프로젝트 설계
+/sc implement   # 기능 구현
+/sc checkpoint  # 상태 저장
+/sc rollback    # 이전으로 복원
+/sc improve     # 코드 개선
+/sc analyze     # 문제 분석
+/sc troubleshoot # 문제 해결
+/sc cleanup     # 코드 정리
+/sc build       # 배포 파일 생성
 ```
-ai-study-hub/
-├── fundamentals/          # AI/ML 기초 개념
-│   ├── python-basics/     # Python 기초
-│   ├── math-stats/        # 수학/통계
-│   └── ml-basics/         # ML 기초 이론
-├── tools/                 # AI 도구 학습
-│   ├── langchain/         # LangChain 튜토리얼
-│   ├── openai/            # OpenAI API 활용
-│   └── huggingface/       # Hugging Face 모델
-├── projects/              # 실습 프로젝트
-│   ├── nlp/               # 자연어처리 프로젝트
-│   ├── computer-vision/   # 컴퓨터 비전 프로젝트
-│   └── ml-ops/            # MLOps 프로젝트
-├── resources/             # 학습 자료
-│   ├── papers/            # 주요 논문
-│   ├── datasets/          # 데이터셋
-│   └── tutorials/         # 튜토리얼 링크
-└── superclaude/           # SuperClaude 관련
-    ├── examples/          # 예제 코드
-    └── templates/         # 프로젝트 템플릿
+
+### MCP 설치 명령어
+```bash
+"Context7 MCP를 설치해주세요"      # 문서 검색
+"Sequential MCP를 설치해주세요"    # 복잡한 분석
+"Playwright MCP를 설치해주세요"    # 브라우저 자동화
+"Magic MCP를 설치해주세요"         # UI 컴포넌트
 ```
 
 ---
 
-## 🛠️ 주요 도구
+## 🎯 실전 예제
 
-### 1. SuperClaude
-AI 개발을 가속화하는 강력한 도구입니다.
-- [설치 가이드](./superclaude/INSTALLATION_GUIDE_KO.md)
-- [사용 예제](./superclaude/examples/)
+### 예제 1: 5분 만에 이미지 편집기 만들기
+```bash
+1. /sc design "Python 이미지 편집기"
+2. 실행 테스트
+3. /sc checkpoint "기본 완성"
+4. /sc implement "자르기 기능"
+5. /sc build "EXE 파일로"
+```
 
-### 2. LangChain
-LLM 애플리케이션 개발 프레임워크
-- [기초 튜토리얼](./tools/langchain/basics.md)
-- [RAG 구현하기](./tools/langchain/rag-tutorial.md)
-
-### 3. OpenAI API
-GPT 모델 활용하기
-- [API 시작하기](./tools/openai/getting-started.md)
-- [프롬프트 엔지니어링](./tools/openai/prompt-engineering.md)
-
-### 4. Hugging Face
-사전학습 모델 활용
-- [모델 허브 사용법](./tools/huggingface/model-hub.md)
-- [파인튜닝 가이드](./tools/huggingface/fine-tuning.md)
+### 예제 2: 웹 크롤러 개발
+```bash
+1. /sc design "뉴스 크롤러"
+2. /sc analyze
+3. /sc troubleshoot
+4. /sc improve
+5. /sc document
+```
 
 ---
 
-## 💻 실습 프로젝트
+## 🛠️ 환경 설정
 
-### 초급 프로젝트
-1. **감정 분석 챗봇**: 텍스트 감정 분석 및 응답 생성
-2. **이미지 분류기**: 간단한 CNN 모델로 이미지 분류
-3. **주가 예측 모델**: LSTM을 활용한 시계열 예측
+### 필수 도구
+- **Claude Code**: [설치 가이드](https://claude.ai/code)
+- **Node.js**: 16.x 이상
+- **Python**: 3.8 이상
+- **WSL** (Windows 사용자)
 
-### 중급 프로젝트
-1. **질문-답변 시스템**: RAG를 활용한 문서 기반 QA
-2. **음성 인식 앱**: Whisper API를 활용한 STT 구현
-3. **추천 시스템**: 협업 필터링 기반 추천 엔진
+### 추천 설정
+```bash
+# Python 가상환경
+python -m venv venv
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Mac/Linux
 
-### 고급 프로젝트
-1. **멀티모달 AI**: 텍스트-이미지 통합 모델
-2. **자동 코드 생성기**: LLM 기반 코드 생성 도구
-3. **AI 에이전트**: 자율적으로 작업을 수행하는 에이전트
-
----
-
-## 📚 리소스
-
-### 필독 논문
-- [Attention Is All You Need](./resources/papers/attention.md)
-- [BERT: Pre-training of Deep Bidirectional Transformers](./resources/papers/bert.md)
-- [GPT-3: Language Models are Few-Shot Learners](./resources/papers/gpt3.md)
-
-### 추천 강의
-- **Andrew Ng의 Machine Learning**: [Coursera](https://www.coursera.org/learn/machine-learning)
-- **Fast.ai**: [실용적인 딥러닝](https://www.fast.ai/)
-- **CS231n**: [스탠포드 컴퓨터 비전](http://cs231n.stanford.edu/)
-
-### 유용한 데이터셋
-- [Kaggle Datasets](https://www.kaggle.com/datasets)
-- [Google Dataset Search](https://datasetsearch.research.google.com/)
-- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
-
-### 커뮤니티
-- [Reddit r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
-- [AI 연구 Slack](https://join.slack.com/t/ai-research)
-- [Papers with Code](https://paperswithcode.com/)
+# 패키지 설치
+pip install -r requirements.txt
+```
 
 ---
 
-## 🎯 학습 팁
+## ⚡ 문제 해결
 
-### 1. 실습 중심 학습
-- 이론 20%, 실습 80% 비율 유지
-- 매일 코드 작성하기
-- 작은 프로젝트부터 시작
+### SuperClaude 설치 안 될 때
+1. Plan Mode 활성화 확인
+2. Claude Code 최신 버전 확인
+3. 재시작 후 다시 시도
 
-### 2. 커뮤니티 활용
-- 질문하기를 두려워하지 않기
-- 다른 사람의 코드 리뷰하기
-- 블로그나 포럼에 학습 내용 공유
+### MCP 설치 실패 시
+1. Node.js 버전 확인
+2. 관리자 권한으로 실행
+3. 수동 설치 요청
 
-### 3. 지속적인 학습
-- 최신 논문 팔로우
-- 새로운 도구와 프레임워크 시도
-- 실패를 학습의 기회로 활용
+### Claudia 한글 깨짐
+```bash
+export LANG=ko_KR.UTF-8
+export LC_ALL=ko_KR.UTF-8
+```
 
 ---
 
 ## 🤝 기여하기
 
-이 레포지토리는 함께 만들어가는 학습 공간입니다.
-
 1. Fork 하기
-2. Feature 브랜치 생성 (`git checkout -b feature/AmazingFeature`)
-3. 변경사항 커밋 (`git commit -m 'Add some AmazingFeature'`)
-4. 브랜치에 Push (`git push origin feature/AmazingFeature`)
-5. Pull Request 생성
+2. Feature 브랜치 생성
+3. 변경사항 커밋
+4. Pull Request 생성
 
 ---
 
 ## 📝 라이센스
 
-이 프로젝트는 MIT 라이센스를 따릅니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
+MIT 라이센스
 
 ---
 
-## ✨ 다음 단계
+## 🚀 다음 단계
 
-1. **오늘 시작하기**: Python 기초부터 차근차근
-2. **일일 학습 계획**: 매일 1-2시간씩 꾸준히
-3. **프로젝트 만들기**: 배운 내용을 바로 적용
-4. **공유하기**: 학습 과정을 기록하고 공유
+1. **오늘**: SuperClaude 설치하고 첫 프로젝트 시작
+2. **이번 주**: 모든 명령어 익히기
+3. **다음 주**: 실전 프로젝트 완성
+4. **이번 달**: AI 기초 마스터
 
-**함께 AI의 미래를 만들어갑시다! 🚀**
+**함께 AI 개발의 미래를 만들어갑시다!** 🎉
